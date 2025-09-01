@@ -14,7 +14,11 @@
       "Bash(dir:*)",
       "Bash(python:*)",
       "Bash(start http://localhost:8000)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(start index.html)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
