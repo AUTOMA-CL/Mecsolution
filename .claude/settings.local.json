@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npx astro add:*)",
+      "Bash(cp:*)",
+      "Bash(mkdir:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run build:*)",
+      "Bash(taskkill:*)",
+      "Bash(sed:*)",
+      "Bash(netstat:*)",
+      "Bash(wmic process where \"name='node.exe'\" get ProcessId,CommandLine:*)",
+      "Bash(dir:*)",
+      "Bash(python:*)",
+      "Bash(start http://localhost:8000)",
+      "Bash(grep:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
