@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'desabolladura-pintura': {
             title: 'Desabolladura y Pintura',
             subtitle: 'Como nuevo',
-            image: 'https://images.unsplash.com/photo-1609205802275-4f5cb6044f55?q=80&w=2070&auto=format&fit=crop',
+            image: 'image/desabolladura-pintura.jpg',
             description: 'Devuelve la apariencia original a tu vehículo con nuestro servicio de desabolladura y pintura profesional.',
             features: [
                 'Desabolladura sin pintura (PDR)',
@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'clima': {
             title: 'Sistema de Clima',
             subtitle: 'Confort todo el año',
-            image: 'https://images.unsplash.com/photo-1591290179448-2df567f964c8?q=80&w=2080&auto=format&fit=crop',
+            image: 'image/sistema-clima.jpg',
             description: 'Mantén el confort en tu vehículo con nuestro servicio especializado en sistemas de climatización.',
             features: [
                 'Carga de gas refrigerante',
