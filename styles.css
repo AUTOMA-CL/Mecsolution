@@ -1026,7 +1026,7 @@ body {
     padding: 0.75rem 0;
     padding-left: 2rem;
     position: relative;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     border-bottom: 1px solid var(--border-color);
 }
 
