@@ -1055,6 +1055,17 @@ body {
     min-width: 200px;
 }
 
+.modal-cta .btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--primary-color);
+}
+
+.modal-cta .btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
 @media (max-width: 768px) {
     .modal-content {
         width: 95%;
