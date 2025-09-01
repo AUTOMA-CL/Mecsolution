@@ -540,29 +540,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Convert service links to modal triggers
     function initServiceModals() {
-        const serviceLinks = document.querySelectorAll('a[href*="servicios/"], a[href="servicios.html"]');
-        serviceLinks.forEach(link => {
+        // Only intercept links to specific service pages, not general servicios.html
+        const specificServiceLinks = document.querySelectorAll('a[href*="servicios/"]');
+        const homepageServiceCards = document.querySelectorAll('.services-preview .service-card-link');
+        
+        // Handle specific service page links (servicios/service-name.html)
+        specificServiceLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 
-                // Extract service ID from href or from card content
-                let serviceId;
                 const href = this.getAttribute('href');
+                const serviceId = href.split('servicios/')[1].replace('.html', '');
                 
-                if (href.includes('servicios/')) {
-                    serviceId = href.split('servicios/')[1].replace('.html', '');
-                } else {
-                    // For homepage service cards, determine service from title
-                    const titleElement = this.querySelector('h3');
-                    if (titleElement) {
-                        const title = titleElement.textContent.toLowerCase();
-                        if (title.includes('diagnóstico')) serviceId = 'diagnostico';
-                        else if (title.includes('revisión técnica')) serviceId = 'revision-tecnica';
-                        else if (title.includes('frenos')) serviceId = 'frenos';
-                        else if (title.includes('neumáticos')) serviceId = 'neumaticos';
-                        else if (title.includes('aceite')) serviceId = 'mantenimiento-basico';
-                        else if (title.includes('embrague')) serviceId = 'cambio-embrague';
-                    }
+                if (serviceId && serviceData[serviceId]) {
+                    openModal(serviceId);
+                }
+            });
+        });
+        
+        // Handle homepage service cards - determine service from title
+        homepageServiceCards.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                let serviceId;
+                const titleElement = this.querySelector('h3');
+                if (titleElement) {
+                    const title = titleElement.textContent.toLowerCase();
+                    if (title.includes('diagnóstico')) serviceId = 'diagnostico';
+                    else if (title.includes('revisión técnica')) serviceId = 'revision-tecnica';
+                    else if (title.includes('frenos')) serviceId = 'frenos';
+                    else if (title.includes('neumáticos')) serviceId = 'neumaticos';
+                    else if (title.includes('aceite')) serviceId = 'mantenimiento-basico';
+                    else if (title.includes('embrague')) serviceId = 'cambio-embrague';
                 }
                 
                 if (serviceId && serviceData[serviceId]) {
