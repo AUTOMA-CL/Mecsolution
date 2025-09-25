@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'desabolladura-pintura': {
             title: 'Desabolladura y Pintura',
             subtitle: 'Como nuevo',
-            image: 'image/desabolladura-pintura.jpg',
+            image: 'image/Desabolladura-pintura.jpg',
             description: 'Devuelve la apariencia original a tu vehículo con nuestro servicio de desabolladura y pintura profesional.',
             features: [
                 'Desabolladura sin pintura (PDR)',
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'diagnostico': {
             title: 'Diagnóstico Profesional',
             subtitle: 'Scanner de última generación',
-            image: 'https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?q=80&w=2070&auto=format&fit=crop',
+            image: 'image/revision-coches-usados.jpg',
             description: 'Utilizamos equipos de diagnóstico de última generación para identificar precisamente cualquier falla en tu vehículo.',
             features: [
                 'Diagnóstico con scanner profesional',
@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'importacion-repuestos': {
             title: 'Importación de Repuestos',
             subtitle: 'Calidad garantizada',
-            image: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?q=80&w=2074&auto=format&fit=crop',
+            image: 'image/repuestos.png',
             description: 'Conseguimos los repuestos que necesitas con la mejor relación calidad-precio del mercado.',
             features: [
                 'Repuestos originales y alternativos',
@@ -361,7 +361,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'revision-precompra': {
             title: 'Revisión Pre-compra',
             subtitle: 'Compra con confianza',
-            image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=2070&auto=format&fit=crop',
+            image: 'image/Inspeccion-pre-compra-1.png',
             description: 'Evita sorpresas desagradables. Evaluamos completamente el vehículo que planeas comprar antes de tomar la decisión.',
             features: [
                 'Inspección mecánica completa',
