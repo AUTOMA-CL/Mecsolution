@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'clima': {
             title: 'Sistema de Clima',
             subtitle: 'Confort todo el año',
-            image: 'image/sistema-clima.jpg',
+            image: 'image/Taller-Aire-Acondicionado.jpeg',
             description: 'Mantén el confort en tu vehículo con nuestro servicio especializado en sistemas de climatización.',
             features: [
                 'Carga de gas refrigerante',
